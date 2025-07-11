@@ -66,7 +66,7 @@ Final dataset shape:
 ---
 
 ## 📈 Visualizations Used
-
+![Data Analysis After Data Preprocessing](Data-Analysis)
 - Cases per year
 - Cases by region
 - Age group impact

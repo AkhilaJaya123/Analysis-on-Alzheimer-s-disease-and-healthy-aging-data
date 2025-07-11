@@ -34,11 +34,23 @@ Major tasks of data preprocessing applied to our dataset:
 - Data Cleaning
 - Data Reduction
 
+🔹 Data Cleaning
+- Checked for missing values using .isnull().sum() and .isna().any(axis=1)
+- Filled missing values:
+- Used .fillna(mean) for numerical columns with normally distributed data (e.g., Data_Value)
+- Used .fillna(mode) for categorical or discrete numeric columns (e.g., Low_Confidence_Limit, High_Confidence_Limit)
+- Verified that columns like Data_Value_Footnote and Data_Value_Footnote_Symbol had a very high proportion of nulls
 
-- **Missing values** handled using `mean()` for continuous features and `mode()` for categorical.
-- **Columns dropped**: `Data_Value_Footnote`, `Data_Value_Footnote_Symbol` due to excessive nulls.
-- **Merged**: `LocationAbbr` and `LocationDesc` for easier regional analysis.
-- Final dataset stored in `.csv` format for further analysis and visualization.
+🔹 Data Reduction
+- Dropped columns:
+Data_Value_Footnote and Data_Value_Footnote_Symbol were removed due to excessive missing values (~151,823 nulls out of 250,937 records)
+
+- Merged columns:
+Combined LocationAbbr and LocationDesc for better regional interpretation
+
+Final dataset shape:
+- Before preprocessing: 250,937 rows × 31 columns
+- After preprocessing: 99,114 rows × 29 columns
 
 ---
 

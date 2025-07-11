@@ -30,6 +30,11 @@ This project involves performing **Exploratory Data Analysis (EDA)** on publicly
 
 ## ⚙️ Preprocessing Steps
 
+Major tasks of data preprocessing applied to our dataset:
+- Data Cleaning
+- Data Reduction
+
+
 - **Missing values** handled using `mean()` for continuous features and `mode()` for categorical.
 - **Columns dropped**: `Data_Value_Footnote`, `Data_Value_Footnote_Symbol` due to excessive nulls.
 - **Merged**: `LocationAbbr` and `LocationDesc` for easier regional analysis.

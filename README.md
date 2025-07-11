@@ -26,6 +26,7 @@ This project involves performing **Exploratory Data Analysis (EDA)** on publicly
 - **Shape (Raw)**: 250,937 rows × 31 columns  
 - **Shape (After Cleaning)**: 99,114 rows × 29 columns
 
+![BEFOFE DATA PREPROCESSING](BEFORE-DATA-PREPROCESSING-VISUALIZATION)
 ---
 
 ## ⚙️ Preprocessing Steps
